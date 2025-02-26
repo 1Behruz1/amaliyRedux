@@ -9,7 +9,7 @@ export const loginUser = (email, password, navigate, setSuccess, setError) => {
       const response = await axios.get(FIREBASE_URL);
       return response.data;
     };
-
+    // ustoz bu try hammada shunaqa umuman oxshamaganiga shunaqa qildik etibor bermen 
     try {
       const users = await fetchUsers();
       const user = Object.entries(users || {}).find(
